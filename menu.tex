@@ -12,6 +12,7 @@
 \usepackage{yfonts}   % For Blackletter/Gothic fonts
 \usepackage{tcolorbox} % For the 'Breaking News' box
 \usepackage{microtype} % Improves text justification
+\usepackage{wasysym}   % For the leaf symbol \textleaf
 
 % Page margins setup for broadsheet feel
 \geometry{top=1in, bottom=1in, left=0.75in, right=0.75in}
@@ -24,6 +25,9 @@
 \newcommand{\thinrule}{\noindent\rule{\linewidth}{0.4pt}}
 \newcommand{\thickrule}{\noindent\rule{\linewidth}{1.2pt}}
 \newcommand{\doublethickrule}{\noindent\rule{\linewidth}{2pt}}
+
+% Custom symbol for vegetarian items
+\newcommand{\veg}{\raisebox{-1pt}{\large\textleaf} }
 
 % Section styling for "Headlines"
 \titleformat{\section}
@@ -47,17 +51,20 @@
 % --- MASTHEAD ---
 \begin{center}
     % The title in Blackletter (Gothic) font
-    {\fontsize{50}{60}\textgoth{The Christmas Chronicle}}
+    {\fontsize{42}{50}\textgoth{Bee-day Bash Chronicle}}
 
     \vspace{0.2cm}
     \thickrule
     \vspace{0.1cm}
 
     % Dateline and Pricing
-    \small \textbf{VOL. CXXV} \hfill \textbf{FRIDAY, DECEMBER 26, 2025} \hfill \textbf{PRICE: ONE JOYFUL TOAST}
+    \small \textbf{VOL. I} \hfill \textbf{TUESDAY, JANUARY 3, 2023} \hfill \textbf{PRICE: ONE SMILE}
 
     \vspace{0.1cm}
     \thinrule
+    \vspace{0.1cm}
+    % Hosts Sub-header
+    \textbf{HOSTS: DIVYA AND POORNA} \hfill \textbf{SPECIAL EDITION}
     \vspace{0.1cm}
     \thickrule
 \end{center}
@@ -66,10 +73,10 @@
 
 % --- MAIN HEADLINE ---
 \begin{center}
-    {\fontsize{28}{32}\selectfont \textbf{FESTIVE FEAST TO BE SERVED AT DUSK}}
+    {\fontsize{24}{28}\selectfont \textbf{GUESTS GATHER FOR CELEBRATION}}
 
     \vspace{0.3cm}
-    \textit{\large Guests Gather for an Evening of Culinary Delight and Merriment}
+    \textit{\large A Splendid Array of Culinary Delights Awaits}
 \end{center}
 
 \vspace{0.5cm}
@@ -83,82 +90,57 @@
     \section{Appetizer Gazette}
     \vspace{0.3cm}
 
-    \subsection{The Warm Welcome}
-    A delightful start to the evening's proceedings, set to tantalize the palate.
+    \subsection{From the Garden & Grill}
+    A selection of starters to ignite the appetite.
 
     \vspace{0.3cm}
-    \textbf{Roasted Butternut Squash Soup} \\
-    \textit{Infused with sage and nutmeg, served with crusty artisan bread.}
+    \textbf{Italian Grilled Veggies} \veg \\
+    \textit{Marinated and grilled zucchini squash and eggplant, seasoned to perfection.}
 
     \vspace{0.2cm}
-    \textbf{Prawn Cocktail Platter} \\
-    \textit{Fresh Atlantic prawns draped in a tangy Marie Rose sauce, served on a bed of crisp lettuce.}
+    \textbf{Bruschetta} \veg \\
+    \textit{Crisp baguette topped with tomato, mozzarella, basil, balsamic glaze, and lemon zest.}
+
+    \vspace{0.2cm}
+    \textbf{Caprese Skewers} \veg \\
+    \textit{Delicate mozzarella pearls paired with fresh cherry tomatoes and basil.}
+
+    \vspace{0.2cm}
+    \textbf{Miso Glazed Eggplant} \veg \\
+    \textit{Japanese eggplant roasted with miso paste, soy sauce, vinegar, ginger, and sesame.}
+
+    \vspace{0.2cm}
+    \textbf{Fruit Salad Skewers} \veg \\
+    \textit{A refreshing stick of honeydew melon, pineapple, Korean pear, papaya, raspberry, and goldenberry.}
+
+    \vspace{0.2cm}
+    \textbf{Cheese Assortment} \veg \\
+    \textit{Vermont yellow cheddar cheese cubes, orange blossom honey goat cheese, and butter almond thins.}
+
+    \vspace{0.3cm}
+    \subsection{Savory Selections}
+
+    \vspace{0.2cm}
+    \textbf{Grilled Chicken Meatballs} \\
+    \textit{Juicy meatballs served in three styles: Pineapple, Buffalo, and Plain.}
 
     \vspace{0.8cm}
 
-    % --- SPECIAL REPORT (KERALA KITCHEN) ---
-    \section{Special Report}
-    \begin{center}
-        \textbf{\textit{Kerala Kitchen: Spice Route Discoveries}}
-    \end{center}
-    \vspace{0.2cm}
-
-    Correspondents report an influx of exotic flavors arriving directly from the coast of Malabar.
-
-    \vspace{0.3cm}
-    \textbf{Appam & Stew} \\
-    \textit{Soft, lacy rice pancakes paired with a creamy vegetable stew simmered in coconut milk and aromatic spices.}
-
-    \vspace{0.2cm}
-    \textbf{Kerala Beef Fry (Thattu Kada Style)} \\
-    \textit{Slow-roasted beef cubes with coconut slices and curry leaves. A spicy delicacy.}
-
-    \vspace{0.2cm}
-    \textbf{Fish Molee} \\
-    \textit{A mild and flavorful fish stew cooked in coconut milk with green chilies and tomatoes.}
-
-    \vspace{0.8cm}
-
-    % --- BREAKING NEWS BOX ---
-    % Using tcolorbox to simulate a newspaper cutout/box
-    \begin{tcolorbox}[colback=white, colframe=black, sharp corners, boxrule=1pt, width=\linewidth]
-        \centering
-        \textbf{\large BREAKING NEWS: DOG SUSPECTED IN KITCHEN HEIST}
-        \vspace{0.2cm}
-        \hrule
-        \vspace{0.2cm}
-        \flushleft
-        \textit{By Our Crime Correspondent}
-
-        \vspace{0.2cm}
-        Local authorities (Mom & Dad) have issued a high-priority alert regarding the family dog, "Buddy," who was spotted lingering suspiciously near the Honey Glazed Ham.
-
-        "He has that guilty look," stated the Head Chef. "We advise all guests to guard their plates diligently."
-
-        The suspect remains at large, currently believed to be napping innocently under the dinner table, waiting for scraps.
-    \end{tcolorbox}
-
-    \columnbreak
-
-    % --- MAIN COURSE ---
-    % I'll use a standard headline style here
-    \section{The Main Event}
+    % --- BEVERAGE BULLETIN ---
+    \section{Beverage Bulletin}
     \vspace{0.3cm}
 
-    \subsection{Traditional Favorites}
-    The centerpieces of tonight's celebration.
-
-    \vspace{0.3cm}
-    \textbf{Traditional Roast Turkey} \\
-    \textit{Succulent turkey breast served with chestnut stuffing, pigs in blankets, and cranberry sauce.}
-
+    \subsection{Libations & Spirits}
     \vspace{0.2cm}
-    \textbf{Honey Glazed Gammon} \\
-    \textit{Slow-cooked gammon joint glazed with honey and mustard, carved to perfection.}
+    \textbf{Lagunitas IPA} \\
+    \textbf{Cerveza Modelo} \\
+    \textbf{Cook's Champagne Brut}
 
     \vspace{0.3cm}
-    \textbf{Accompaniments} \\
-    \textit{Duck fat roast potatoes, honey-roasted parsnips, buttered Brussels sprouts with bacon, and rich gravy.}
+    \subsection{Temperance Bar}
+    \vspace{0.2cm}
+    \textbf{Fresh Orange Juice} \\
+    \textbf{Fresh Carrot Juice}
 
     \vspace{0.8cm}
 
@@ -166,31 +148,34 @@
     \section{Dessert Dispatches}
     \vspace{0.3cm}
 
-    \subsection{Sweet Endings Declared}
-    Negotiations conclude with a treaty of treats for all ages.
+    \textbf{Mini Bon Delicieux} \\
+    \textit{A sweet confection to conclude the festivities.}
 
-    \vspace{0.3cm}
-    \textbf{Classic Christmas Pudding} \\
-    \textit{Served flaming with brandy butter.}
+    \vspace{1.0cm}
 
-    \vspace{0.2cm}
-    \textbf{Chocolate Yule Log} \\
-    \textit{A rich chocolate sponge rolled with whipped cream and ganache.}
+    % --- DOG MENU BOX ---
+    % Placed at the bottom of the column or column break to balance
+    \begin{tcolorbox}[colback=white, colframe=black, sharp corners, boxrule=1pt, width=\linewidth]
+        \centering
+        \textbf{\large THE CANINE CORNER}
+        \vspace{0.1cm}
+        \hrule
+        \vspace{0.2cm}
+        \flushleft
+        \textit{Exclusive Treats for Four-Legged Guests}
 
-    \vspace{0.2cm}
-    \textbf{Fruit Trifle} \\
-    \textit{Layers of sponge, custard, fruit, and whipped cream.}
+        \vspace{0.3cm}
+        \textbf{Birthday Cake} \\
+        \textit{A healthy blend of Turkey, Egg, Broccoli, Yogurt, and Peanut Butter.}
 
-    \vspace{0.8cm}
-
-    \section{Editorial Notes}
-    \vspace{0.2cm}
-    \textbf{Coffee & Mince Pies} \\
-    Discussions to continue into the night accompanied by freshly brewed coffee and homemade mince pies.
+        \vspace{0.2cm}
+        \textbf{Freeze-Dried Origin Treats} \\
+        \textit{Premium snacks for the discerning pup.}
+    \end{tcolorbox}
 
     \vspace{0.5cm}
     \begin{center}
-        \textit{The Editorial Board wishes you a Merry Christmas and a Happy New Year!}
+        \textit{\small \veg Indicates Vegetarian Option}
     \end{center}
 
 \end{multicols}
