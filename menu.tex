@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 % Packages for layout and styling
 \usepackage[utf8]{inputenc}
@@ -14,8 +14,8 @@
 \usepackage{microtype} % Improves text justification
 \usepackage{wasysym}   % For the leaf symbol \textleaf
 
-% Page margins setup for broadsheet feel
-\geometry{top=1in, bottom=1in, left=0.75in, right=0.75in}
+% Page margins setup for broadsheet feel - Tighter margins to fit one page
+\geometry{top=0.5in, bottom=0.5in, left=0.5in, right=0.5in}
 
 % Define vintage paper color (Cream/Off-White)
 \definecolor{newsprint}{RGB}{248, 245, 235}
@@ -31,14 +31,14 @@
 
 % Section styling for "Headlines"
 \titleformat{\section}
-  {\normalfont\Large\bfseries\centering\MakeUppercase} % Format
+  {\normalfont\large\bfseries\centering\MakeUppercase} % Reduced size slightly
   {} % Label
   {0pt} % Sep
   {} % Before code
   [\vspace{-0.2em}\thinrule] % After code
 
 \titleformat{\subsection}
-  {\normalfont\large\bfseries}
+  {\normalfont\normalsize\bfseries} % Reduced size
   {}
   {0pt}
   {}
@@ -50,132 +50,131 @@
 
 % --- MASTHEAD ---
 \begin{center}
-    % The title in Blackletter (Gothic) font
-    {\fontsize{42}{50}\textgoth{Bee-day Bash Chronicle}}
+    % The title in Blackletter (Gothic) font - Reduced size
+    {\fontsize{36}{42}\textgoth{Bee-day Bash Chronicle}}
 
-    \vspace{0.2cm}
-    \thickrule
     \vspace{0.1cm}
+    \thickrule
+    \vspace{0.05cm}
 
     % Dateline and Pricing
-    \small \textbf{VOL. I} \hfill \textbf{TUESDAY, JANUARY 3, 2023} \hfill \textbf{PRICE: ONE SMILE}
+    \footnotesize \textbf{VOL. I} \hfill \textbf{TUESDAY, JANUARY 3, 2023} \hfill \textbf{PRICE: ONE SMILE}
 
-    \vspace{0.1cm}
+    \vspace{0.05cm}
     \thinrule
-    \vspace{0.1cm}
+    \vspace{0.05cm}
     % Hosts Sub-header
     \textbf{HOSTS: DIVYA AND POORNA} \hfill \textbf{SPECIAL EDITION}
-    \vspace{0.1cm}
+    \vspace{0.05cm}
     \thickrule
 \end{center}
 
-\vspace{0.5cm}
+\vspace{0.2cm}
 
 % --- MAIN HEADLINE ---
 \begin{center}
-    {\fontsize{24}{28}\selectfont \textbf{GUESTS GATHER FOR CELEBRATION}}
+    {\fontsize{20}{24}\selectfont \textbf{GUESTS GATHER FOR CELEBRATION}}
 
-    \vspace{0.3cm}
-    \textit{\large A Splendid Array of Culinary Delights Awaits}
+    \vspace{0.1cm}
+    \textit{\normalsize A Splendid Array of Culinary Delights Awaits}
 \end{center}
 
-\vspace{0.5cm}
+\vspace{0.2cm}
 \thinrule
-\vspace{0.5cm}
+\vspace{0.2cm}
 
 % --- COLUMNAR LAYOUT ---
 \begin{multicols}{2}
 
     % --- APPETIZER GAZETTE ---
     \section{Appetizer Gazette}
-    \vspace{0.3cm}
+    \vspace{0.2cm}
 
     \subsection{From the Garden & Grill}
     A selection of starters to ignite the appetite.
 
-    \vspace{0.3cm}
+    \vspace{0.2cm}
     \textbf{Italian Grilled Veggies} \veg \\
     \textit{Marinated and grilled zucchini squash and eggplant, seasoned to perfection.}
 
-    \vspace{0.2cm}
+    \vspace{0.1cm}
     \textbf{Bruschetta} \veg \\
     \textit{Crisp baguette topped with tomato, mozzarella, basil, balsamic glaze, and lemon zest.}
 
-    \vspace{0.2cm}
+    \vspace{0.1cm}
     \textbf{Caprese Skewers} \veg \\
     \textit{Delicate mozzarella pearls paired with fresh cherry tomatoes and basil.}
 
-    \vspace{0.2cm}
+    \vspace{0.1cm}
     \textbf{Miso Glazed Eggplant} \veg \\
     \textit{Japanese eggplant roasted with miso paste, soy sauce, vinegar, ginger, and sesame.}
 
-    \vspace{0.2cm}
+    \vspace{0.1cm}
     \textbf{Fruit Salad Skewers} \veg \\
     \textit{A refreshing stick of honeydew melon, pineapple, Korean pear, papaya, raspberry, and goldenberry.}
 
-    \vspace{0.2cm}
+    \vspace{0.1cm}
     \textbf{Cheese Assortment} \veg \\
     \textit{Vermont yellow cheddar cheese cubes, orange blossom honey goat cheese, and butter almond thins.}
 
-    \vspace{0.3cm}
+    \vspace{0.2cm}
     \subsection{Savory Selections}
 
-    \vspace{0.2cm}
+    \vspace{0.1cm}
     \textbf{Grilled Chicken Meatballs} \\
     \textit{Juicy meatballs served in three styles: Pineapple, Buffalo, and Plain.}
 
-    \vspace{0.8cm}
+    \vspace{0.4cm}
 
     % --- BEVERAGE BULLETIN ---
     \section{Beverage Bulletin}
-    \vspace{0.3cm}
+    \vspace{0.2cm}
 
     \subsection{Libations & Spirits}
-    \vspace{0.2cm}
+    \vspace{0.1cm}
     \textbf{Lagunitas IPA} \\
     \textbf{Cerveza Modelo} \\
     \textbf{Cook's Champagne Brut}
 
-    \vspace{0.3cm}
-    \subsection{Temperance Bar}
     \vspace{0.2cm}
+    \subsection{Temperance Bar}
+    \vspace{0.1cm}
     \textbf{Fresh Orange Juice} \\
     \textbf{Fresh Carrot Juice}
 
-    \vspace{0.8cm}
+    \vspace{0.4cm}
 
     % --- DESSERT DISPATCHES ---
     \section{Dessert Dispatches}
-    \vspace{0.3cm}
+    \vspace{0.2cm}
 
     \textbf{Mini Bon Delicieux} \\
     \textit{A sweet confection to conclude the festivities.}
 
-    \vspace{1.0cm}
+    \vspace{0.5cm}
 
     % --- DOG MENU BOX ---
-    % Placed at the bottom of the column or column break to balance
     \begin{tcolorbox}[colback=white, colframe=black, sharp corners, boxrule=1pt, width=\linewidth]
         \centering
         \textbf{\large THE CANINE CORNER}
         \vspace{0.1cm}
         \hrule
-        \vspace{0.2cm}
+        \vspace{0.1cm}
         \flushleft
         \textit{Exclusive Treats for Four-Legged Guests}
 
-        \vspace{0.3cm}
+        \vspace{0.2cm}
         \textbf{Birthday Cake} \\
         \textit{A healthy blend of Turkey, Egg, Broccoli, Yogurt, and Peanut Butter.}
 
-        \vspace{0.2cm}
+        \vspace{0.1cm}
         \textbf{Freeze-Dried Origin Treats} \\
         \textit{Premium snacks for the discerning pup.}
     \end{tcolorbox}
 
-    \vspace{0.5cm}
+    \vspace{0.3cm}
     \begin{center}
-        \textit{\small \veg Indicates Vegetarian Option}
+        \textit{\footnotesize \veg Indicates Vegetarian Option}
     \end{center}
 
 \end{multicols}
